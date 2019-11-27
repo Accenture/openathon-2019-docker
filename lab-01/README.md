@@ -43,6 +43,8 @@ Aunque el formato de imagen de Docker se ha impuesto como estándar abierto, exi
 - *rkt* ('rocket'). Motor de contenedores del proyecto CoreOS. Desde la adquisición de CoreOS por parte de Red Hat, rkt ha evolucionado a cri-o.
 - *Mesos*. Una de las principales alternativas a Docker en volumen de adopción. Soporta el formato de imagen estándar de Docker.
 - *containerd*. Proyecto más reciente bajo el paraguas de la Cloud Native Computing Foundation. Cuenta con bastantes apoyos y además soporta el formato de imagen estándar de Docker.
+- *Dyno*. Tecnología de contenedores propietaria de Heroku, basada igualmente en Linux. Desde hace pocos meses, Heroku soporta la ejecución de imágenes Docker como Dynos, además de mantener su propio enfoque basado en 'buildpacks'.
+- *Warden*. Tecnología de contenedores en Linux utilizada por la plataforma Cloud Foundry.
 
 ## Orquestando contenedores
 
