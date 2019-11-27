@@ -18,6 +18,8 @@ La containerización no es una técnica nueva, sino que viene usándose desde ha
 
 Docker nace para superar precisamente esa barrera: hacer de la containerización algo sencillo, al alcance de todos. Es decir, Docker toma todos los conceptos existentes de containerización, y alguna de las librerías y herramientas existentes, para crear una plataforma nueva con un foco muy especial en la experiencia de desarrollo y operación. Que fuera, sobre todo, sencilla de aprender y de usar. Y lo consiguió.
 
+![Docker logo](resources/docker.png)
+
 En pocos años Docker se ha convertido en el estándar de industria para la containerización de aplicaciones, y ha abierto la puerta a muchos otros proyectos que lo complementan, extienden o tratan de competir con él. Y el formato que impulsó Docker para definir las imágenes ejecutables y empaquetarlas para su distribución, se ha convertido en el estándar abierto que usan prácticamente todas las tecnologías de containerización actuales.
 
 ## Conceptos básicos de Docker
