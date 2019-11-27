@@ -65,6 +65,26 @@ Aunque no entraremos en profundidad en plataformas de orquestación de contenedo
 - *Microsoft Azure AKS, Azure Kubernetes Service*. Plataforma basada en Kubernetes gestionada por Microsoft Azure.
 - *Microsoft Azure ARO, Azure Red Hat OpenShift*. Plataforma basada en OpenShift gestionada por Microsoft Azure.
 
+## Diferencias entre containerización y máquinas virtuales
+
+En este punto, posiblemente muchos os preguntais cuál es la diferencia entre Docker y una máquina virtual de "toda la vida", como VirtualBox, VMware o Hyper-V.
+
+Ambos enfoques de virtualización son complementarios, con sus pros y contras. En el caso de las máquinas virtuales, la unidad de virtualización es el host virtual, lo que incluye, sobre el hipervisor, un stack completo con sistema operativo, librerías y dependencias, y finalmente la aplicación virtualizada. En el caso de los contenedores, la unidad de virtualización comienza más "arriba", sobre el sistema operativo.
+
+Eso quiere decir que en un mismo host físico que proporciona la capacidad de virtualizar con contenedores, todos ellos comparten el kernel del sistema operativo, lo que puede ocasionar ciertas incompatibilidades llegado el caso (p.ej. imágenes que dependen de glibc).
+
+Sin embargo, en un enfoque con máquinas virtuales, como la virtualización incluye al sistema operativo, el mismo host físico puede alojar diferentes sistemas, p.ej. máquinas Windows o Linux conviviendo en el mismo host.
+
+Las máquinas virtuales son rápidas de iniciar, pero los contenedores lo son aun más, puesto que no deben iniciar el sistema operativo. Las máquinas virtuales ofrecen un mayor aislamiento entre aplicaciones, y darán menos problemas derivados de incompatibilidad en el kernel (incluso aunque sean distintas aplicaciones basadas en Linux).
+
+Gráficamente, podemos verlo en el siguiente diagrama:
+
+![Comparación entre máquinas virtuales y contenedores](resources/comp-vm-cont.png)
+
+Ambos enfoques además pueden convivir y dentro de un mismo host físico que lo soporta, se pueden desplegar máquinas virtuales y contenedores simultáneamente, consiguiendo en una sola plataforma lo mejor de ambos mundos:
+
+![Convivencia entre máquinas virtuales y contenedores](resources/conv-vm-cont.png)
+
 ## Conclusión
 
 Una vez vistos los conceptos principales de Docker y de la containerización, pasaremos a los laboratorios prácticos donde desarrollaremos estos conceptos paso a paso.
