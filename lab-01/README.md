@@ -2,7 +2,7 @@
 
 ## ¿Qué es containerización?
 
-Uno de los principales retos a los que nos enfrentamos como ingenieros de software es al de garantizar que el trabajo que hacemos individualmente luego se traslada adecuadamente a un entorno productivo, además de por supuesto todos los entornos de validación intermedios que puedan existir.
+Uno de los principales retos a los que nos enfrentamos como ingenieros de software es el de garantizar que el trabajo que hacemos individualmente luego se traslada adecuadamente a un entorno productivo, además de por supuesto todos los entornos de validación intermedios que puedan existir.
 
 Sufrimos con frecuencia el 'síndrome de funciona-en-mi-PC', que no es más que un reflejo de una forma de trabajar que no tiene en cuenta modelos de integración, empaquetado, distribución y ejecución consistentes sin importar dónde y cómo se hagan.
 
@@ -10,7 +10,7 @@ Mediante scripts y herramientas de automatización, hemos mejorado mucho en inte
 
 La práctica de la containerización de aplicaciones ha cobrado relevancia en los últimos años porque viene a resolver gran parte de estas situaciones, aspirando a crear una mejor experiencia para desarrolladores y operadores de entornos.
 
-Containerizar una aplicación es, explicado de forma sencilla, ejecutarla de forma aislada al resto de procesos en una misma máquina que la hospeda. Eso permite compartir mucho mejor los recursos físicos de un servidor, aumentando la densidad de aplicaciones, pero manteniendo el aislamiento entre ellas que nos de la seguridad necesitaria tanto en el aspecto de 'security' como de 'certainty', aumentando la predecibilidad de nuestros sistemas.
+Containerizar una aplicación es, explicado de forma sencilla, ejecutarla de forma aislada al resto de procesos en una misma máquina que la hospeda. Eso permite compartir mucho mejor los recursos físicos de un servidor, aumentando la densidad de aplicaciones, pero manteniendo el aislamiento entre ellas que nos de la seguridad necesaria tanto en el aspecto de 'security' como de 'certainty', aumentando la predecibilidad de nuestros sistemas.
 
 La containerización no es una técnica nueva, sino que viene usándose desde hace más de 10 años en sistemas Linux. Linux incluye funcionalidades para aislar procesos unos de otros, aislar espacios de nombres y usuarios, o compartir recursos de computación: cgroups, kernel namespaces, libvirt, y muchas otras. Pero a pesar de no ser nueva, su uso no estaba extendido en la industria debido a la dificultad que tienen esas herramientas, que solo las hacía accesibles a unos pocos.
 
@@ -56,7 +56,7 @@ Para gestionar contenedores a escala, es preciso contar con una plataforma que g
 
 Aunque no entraremos en profundidad en plataformas de orquestación de contenedores en esta ocasión (pero seguro que sí en la próxima), sí que es interesante comentar las principales para que os resulten familiares:
 
-- *Docker Swarm*. La plataforma de orquestación de la propia Docker Inc. (la compañía detrás de Docker y Docker Enterprise, negocio recientmente adquirido por Mirantis). Muy sencilla de poner en marcha pero complicada de mantener en buena salud. Requiere realmente de una plataforma Docker Enterprise (comercial) para sacarle todo su partido.
+- *Docker Swarm*. La plataforma de orquestación de la propia Docker Inc. (la compañía detrás de Docker y Docker Enterprise, negocio recientemente adquirido por Mirantis). Muy sencilla de poner en marcha pero complicada de mantener en buena salud. Requiere realmente de una plataforma Docker Enterprise (comercial) para sacarle todo su partido.
 - *Kubernetes*. El **rey** de las plataformas. Estándar de facto que se ha impuesto a todas las demás en cuota de adopción. Inicialmente fue una contribución de Google y luego muchas compañías han empezado a invertir estratégicamente en él, notablemente Red Hat.
 - *Red Hat OpenShift*. Plataforma basada en Kubernetes, con un foco en la usabilidad y experiencia de desarrollo.
 - *RancherOS*. Desde su versión 2.0, plataforma basada en Kubernetes, compartiendo el foco en la usabilidad y experiencia de otras opciones.
@@ -69,7 +69,7 @@ Aunque no entraremos en profundidad en plataformas de orquestación de contenedo
 
 ## Diferencias entre containerización y máquinas virtuales
 
-En este punto, posiblemente muchos os preguntais cuál es la diferencia entre Docker y una máquina virtual de "toda la vida", como VirtualBox, VMware o Hyper-V.
+En este punto, posiblemente muchos os preguntáis cuál es la diferencia entre Docker y una máquina virtual de "toda la vida", como VirtualBox, VMware o Hyper-V.
 
 Ambos enfoques de virtualización son complementarios, con sus pros y contras. En el caso de las máquinas virtuales, la unidad de virtualización es el host virtual, lo que incluye, sobre el hipervisor, un stack completo con sistema operativo, librerías y dependencias, y finalmente la aplicación virtualizada. En el caso de los contenedores, la unidad de virtualización comienza más "arriba", sobre el sistema operativo.
 
