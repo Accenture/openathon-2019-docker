@@ -9,7 +9,7 @@ services:
  my-backend:
     container_name: backend
     hostname: backend
-    image: josdev27/spring_boot_app
+    image: spring_boot_app
     ports:
       - 8080:8080
     environment:
