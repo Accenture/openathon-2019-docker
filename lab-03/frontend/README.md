@@ -42,7 +42,7 @@ Como resultado obtendremos lo siguiente:
 
 ```sh
 $ git clone https://github.com/Accenture/openathon-2019-docker-angular-app.git
-Cloning into 'angular_app'...
+Cloning into 'openathon-2019-docker-angular-app'...
 remote: Enumerating objects: 61, done.
 remote: Counting objects: 100% (61/61), done.
 remote: Compressing objects: 100% (46/46), done.
