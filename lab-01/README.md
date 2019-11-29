@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="../resources/header.png">
+</p>
+
 # Lab 01 - Introducción a Docker y containerización
 
 ## ¿Qué es containerización?
@@ -90,3 +94,9 @@ Ambos enfoques además pueden convivir y dentro de un mismo host físico que lo 
 ## Conclusión
 
 Una vez vistos los conceptos principales de Docker y de la containerización, pasaremos a los laboratorios prácticos donde desarrollaremos estos conceptos paso a paso.
+
+[< Lab 00. Play with Docker](../lab-00/) | [ Lab 02. Dockerfiles >](../lab-02)
+
+<p align="center">
+    <img src="../resources/header.png">
+</p>
