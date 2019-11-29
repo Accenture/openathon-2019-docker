@@ -26,7 +26,7 @@ Los contenidos que os mostraremos en este openathon son los siguientes:
    1. [¿Qué es un Dockerfile?](lab-02#qué-es-un-dockerfile)
    2. [Crear una imagen con contenido estático](lab-02#crear-imagen-con-contenido-estático)
 
-3. Una pequeña práctica, ¡un hola mundo por supuesto!](lab-03)
+3. [Una pequeña práctica, ¡un hola mundo por supuesto!](lab-03)
    1. [Dockerizar una aplicación web](lab-03/frontend)
    2. [Dockerizar una aplicación Spring boot](lab-03/backend)
 
