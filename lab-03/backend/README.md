@@ -44,7 +44,7 @@ Y la respuesta:
 
 ### Clonar el repositorio
 
-Partiendo del directorio home (~), tienes que clonar el proyecto desde [spring_boot_app](https://github.com/josdev27/spring_boot_app). Añadir una nueva instancia en play-with-docker y ejecutar:
+Partiendo del directorio home (~), tienes que clonar el proyecto desde [spring_boot_app](https://github.com/Accenture/openathon-2019-docker-spring-boot-app.git). Añadir una nueva instancia en play-with-docker y ejecutar:
 
 Para cambiar al directorio home:
 
@@ -55,15 +55,15 @@ cd
 Clonamos el repositorio:
 
 ```sh
-git clone https://github.com/josdev27/spring_boot_app.git
+git clone https://github.com/Accenture/openathon-2019-docker-spring-boot-app.git
 ```
 
 Si todo es correcto, obtendremos la siguiente salida:
 
 ```sh
 [node1] (local) root@192.168.0.23 ~
-$ git clone https://github.com/josdev27/spring_boot_app.git
-Cloning into 'spring_boot_app'...
+$ git clone https://github.com/Accenture/openathon-2019-docker-spring-boot-app.git
+Cloning into 'openathon-2019-docker-spring-boot-app'...
 remote: Enumerating objects: 47, done.
 remote: Counting objects: 100% (47/47), done.
 remote: Compressing objects: 100% (31/31), done.
@@ -71,10 +71,10 @@ remote: Total 47 (delta 5), reused 39 (delta 1), pack-reused 0
 Unpacking objects: 100% (47/47), done.
 ```
 
-En este momento, hemos generado el directorio **spring_boot_app** con el código fuente. El próximo paso es cambiarnos con el comando *cd*:
+En este momento, hemos generado el directorio **openathon-2019-docker-spring-boot-app** con el código fuente. El próximo paso es cambiarnos con el comando *cd*:
 
 ```sh
-cd spring_boot_app/
+cd openathon-2019-docker-spring-boot-app/
 ```
 
 Si hacemos un *ls*, podemos ver el contenido del repositorio:
