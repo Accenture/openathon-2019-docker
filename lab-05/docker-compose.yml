@@ -1,0 +1,30 @@
+version: '3.2'
+services:
+ my-frontend:
+    container_name: frontend
+    hostname: frontend
+    image: helloworld:latest
+    ports:
+      - 80:80
+ my-backend:
+    container_name: backend
+    hostname: backend
+    image: josdev27/spring_boot_app
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=db
+      - DB_URL=db
+ db:
+    container_name: db
+    hostname: db
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+volumes:
+  postgres-data:
+    external: true
