@@ -77,15 +77,15 @@ docker images
 
 > **No es necesario si vamos a trabajar con Play With Docker**
 
-Descarga el paquete
+Descarga el paquete (en caso de no estar logado como superusuario hay que lanzarlo con sudo)
 <br/>
 ```curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose```
 <br/>
-Aplica permisos de ejecución al fichero binario
+Aplica permisos de ejecución al fichero binario (en caso de no estar logado como superusuario hay que lanzarlo con sudo)
 <br/>
 ```chmod +x /usr/local/bin/docker-compose```
 <br/>
-Añádelo al PATH mediante un enlace simbólico
+Añádelo al PATH mediante un enlace simbólico (en caso de no estar logado como superusuario hay que lanzarlo con sudo)
 <br/>
 ```ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose```
 > **Recomendamos usar la versión estable**
@@ -95,7 +95,7 @@ Añádelo al PATH mediante un enlace simbólico
 <br/>
 
 ### Paso 2. Creación de directorio de trabajo.
-Cramos una carpeta en el directorio de root
+Creamos una carpeta en el directorio home del usuario  
 ```
 mkdir docker-compose
 ```
