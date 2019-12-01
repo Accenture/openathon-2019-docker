@@ -193,7 +193,7 @@ El resultado final debería tener un aspecto parecido a del siguiente **ejemplo*
 
 Ahora tan solo nos queda construir el comando completo sustituyendo la etiqueta *< HOST >* por el identificador que acabamos de construir y lo ejecutamos en la consola:
     
-> **ATENCION:** Asegurate de construir correctamente el identificador y sustituirlo por *< HOST >* en el comando, de lo contrario la imagen que se generará será incapaz de conectarse al servidor cuando la usemos en los próximos laboratios.
+> **ATENCION:** Asegurate de construir correctamente el identificador y sustituirlo por *< HOST >* en el comando, de lo contrario la imagen que se generará será incapaz de conectarse al servidor cuando la usemos en los próximos laboratios. En caso de estar realizando la práctica con linux local simplemente hay que substituir "<HOST>" por "localhost"
 
 ```sh
 docker build -t helloworld --build-arg ARG_API_URL=<HOST> .
