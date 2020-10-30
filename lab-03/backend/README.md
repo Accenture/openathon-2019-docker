@@ -175,8 +175,7 @@ docker run -d -p 8080:8080 --name "spring_boot_app" -e "SPRING_PROFILES_ACTIVE=l
 4. **--name**: permite dar un nombre identificativo al contenedor. 
 5. **-e**: nos permite pasar variables de entorno. En este caso, para que el microservicio se ejecute con el perfil *local*. El perfil *db* es que nos permite usar la base de datos que se verá en el [lab-04](../../lab-04/README.md).
 6. **-p**: el formato es host_port:container_port. En este caso, el puerto 8080 de la máquina lo redirijimos al puerto 8080 del contenedor (por el que está escuchando el microservicio).
-7. **-p**: el formato es host_port:container_port. En este caso, el puerto 8080 de la máquina lo redirijimos al puerto 8080 del contenedor (por el que está escuchando el microservicio).
-8. **-t**: para indicar qué imagen queremos ejecutar
+7. **-t**: para indicar qué imagen queremos ejecutar
 
 Para más información, mirar https://docs.docker.com/engine/reference/commandline/run/.
 
